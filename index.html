@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RCGG Bible Study Group</title>
+    <link rel="manifest" href="/manifest.json" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #;
+      }
+      #navbar {
+        background-color: #1d8f1d;
+        display: flex;
+        justify-content: space-between; /* Align items to the left and right */
+        padding: 13px;
+        position: fixed;
+        width: 100%;
+        height: clamp(40px, 2vw, 130px);
+        overflow: hidden;
+        top: 0;
+        z-index: 1;
+      }
+      #navbar-title {
+        color: #fff;
+        font-size: clamp(15px, 2vw, 30px);
+      }
+      #navbar-links {
+        display: flex;
+        align-items: center;
+      }
+      #navbar a {
+        color: #fff;
+        margin: 0 15px;
+        text-decoration: none;
+        cursor: pointer;
+        text-size: clamp(12px, 2vw, 20px);
+      }
+      #navbar a:hover {
+        text-decoration: underline;
+      }
+      #verse-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+      #hymn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+      #hymn-container h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+      #intro-container h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: clamp(14px, 2vw, 22px);
+        font-size: 40px;
+      }
+      #intro-container h2,
+      h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        font-size: 25px;
+      }
+      #intro-container p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <span id="navbar-title"> HCA 曉士頓基督徒聚會 </span>
+      <div id="navbar-links">
+        <a href="/index.html">主页</a>
+        <a href="hymns-page/hymns.html">诗歌</a>
+        <a href="bible-study/bible-study.html">信息分享</a>
+        <a href="activities/activities.html">活动</a>
+        <a href="/food.html">休斯顿美食指南</a>
+        <a href="/guide.html">新生指南</a>
+        <a href="https://hcafamily.org/rcgg/photos/">相册</a>
+        <a href="https://hcafamily.org/rcgg/photos/">登录</a>
+      </div>
+    </div>
+    <div id="intro-container">
+      <h1></h1>
+      <h1>Welcome to RCGG Bible Study Group</h1>
+      <h1>欢迎来到爱的神之家</h1>
+      <h3>欢迎一切愿意了解圣经，认识神与探索生命真理的朋友们！</h3>
+
+      <h1 class="section-title">我们是谁？</h1>
+      <p class="paragraph-content">
+        我们是爱的神之家，一群生活在休斯顿的华人基督徒团体。我们里面有学生，职青，家庭，与一些想要认识耶稣基督的年轻人。欢迎来到休斯顿工作交流学习生活的你，欢迎你来到神的家中和我们一起分享美食，探讨信仰。
+      </p>
+      <div class="plan__list">
+        <article class="plan">
+          <h1 class="plan__title">团契简介</h1>
+          <p>
+            RCGG（Rice Chinese Gospel
+            Group莱斯大学中文福音组）又称为爱的神之家，在莱斯大学和医疗中心附近每周五晚上都有聚会。
+          </p>
+        </article>
+        <article class="plan">
+          <h1 class="plan__title">团契使命</h1>
+          <p>
+            耶稣进前来，对他们说：“天上地下所有的权柄都赐给我了。所以，你们要去，使万民作我的门徒，奉父、子、圣灵的名给他们施洗。凡我所吩咐你们的，都教训他们遵守，我就常与你们同在直到世界的末了。”-马太福音28:18-20
+          </p>
+        </article>
+      </div>
+    </div>
+
+    <div id="verse-container">
+      <h2>年度经文</h2>
+      <p id="verse-info">
+        为要成全圣徒，各尽其职，建立基督的身体，直等到我们众人在真道上同归于一，认识神的儿子，得以长大成人，满有基督长成的身量。-以弗所书4:12-13
+      </p>
+    </div>
+    <div id="hymn-container">
+      <h2>本周诗歌</h2>
+      <p id="hymn-info">Loading...</p>
+    </div>
+  </body>
+</html>
