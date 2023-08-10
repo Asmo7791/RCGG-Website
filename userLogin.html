@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <script src="userLogin.js"></script>
+    <!-- Include the login JavaScript file -->
+  </head>
+  <body>
+    <h1>Login</h1>
+    <form id="login-form" action="/login" method="post">
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Username"
+        required
+      /><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Password"
+        required
+      /><br />
+      <button type="button" id="login-button">Login</button>
+      <!-- Changed type to "button" -->
+    </form>
+    <p>Don't have an account? <a href="/userRegister.html">Sign up</a></p>
+
+    <script>
+      document.getElementById("login-button").addEventListener("click", () => {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        // Simulate sending the credentials to the server
+        // In a real scenario, this would be an AJAX request to your server
+        // Example here uses console logs to mimic the behavior
+        console.log("Sending login request...");
+        console.log("Username:", username);
+        console.log("Password:", password);
+
+        // You can replace the above console logs with an actual AJAX request
+        // to your server's login endpoint
+      });
+    </script>
+  </body>
+</html>
